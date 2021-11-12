@@ -16,11 +16,11 @@
   rel:hasSex "Hombre";
   rel:hasInjury "2";
   rel:hasPositiveAlcoholTest "N";
-  rel:hasNumber "1";
   rel:hasVehicleType "Bicicleta";
   rel:hasPersonType "Conductor".
 
-:CALLE_MAYOR a :Street.
+:CALLE_MAYOR a :Street;
+  rel:hasNumber "1".
 
 :CENTRO a :District.
 
@@ -38,11 +38,11 @@
   rel:hasSex "Hombre";
   rel:hasInjury "5";
   rel:hasPositiveAlcoholTest "N";
-  rel:hasNumber "1";
   rel:hasVehicleType "Bicicleta";
   rel:hasPersonType "Conductor".
 
 
-:GRAN_VIA a :Street.
+:GRAN_VIA a :Street;
+  rel:hasNumber "1".
 
 :CENTRO a :District.
