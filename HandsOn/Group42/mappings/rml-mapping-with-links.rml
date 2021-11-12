@@ -10,7 +10,7 @@
 
 <#AccidentTP> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "./data/AccidentesBicicletas_2019_2020_2021-with-links.csv" ;
+    rml:source "AccidentesBicicletas_2019_2020_2021-with-links.csv" ;
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
@@ -23,13 +23,6 @@
     rr:objectMap [
       rml:reference "DateTime";
       rr:datatype  xsd:dateTime
-      ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vocab:hasNumber;
-    rr:objectMap [
-      rml:reference "numero"
       ]
   ];
 
@@ -122,6 +115,12 @@
   rr:subjectMap [
     rr:template "http://bicycleaccidents.org/resource/{localizacion}";
     rr:class vocab:Street
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNumber;
+    rr:objectMap [
+      rml:reference "numero"
+      ]
   ];
   
   rr:predicateObjectMap [
