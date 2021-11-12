@@ -59,7 +59,7 @@ rel:hasPositiveAlcoholTest a :DataProperty;
     rdfs:range xsd:string .
 
 rel:hasNumber a :DataProperty;
-    rdfs:domain :Accident;
+    rdfs:domain :Street;
     rdfs:range xsd:string .
 
 #################################################################
