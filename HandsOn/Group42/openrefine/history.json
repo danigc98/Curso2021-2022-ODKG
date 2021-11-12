@@ -196,5 +196,18 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column localizacion using expression jython:return value.replace('\\'', '_')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "jython:value2 = value.replace('Á','A').replace('Í','I').replace('Ó','O').replace('É','E').replace('Ú','U').replace('Ñ','N')\nreturn value2",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion using expression jython:value2 = value.replace('Á','A').replace('Í','I').replace('Ó','O').replace('É','E').replace('Ú','U').replace('Ñ','N')\nreturn value2"
   }
 ]
