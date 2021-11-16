@@ -1,6 +1,6 @@
-@prefix : http://bicycleaccidents.org/ontology# .
-@rel : http://bicycleaccidents.org/ontology/relationship/ .
-@base http://bicycleaccidents.org/ontology .
+@prefix : <http://bicycleaccidents.org/ontology#> .
+@prefix rel: <http://bicycleaccidents.org/ontology/relationship/> .
+@base <http://bicycleaccidents.org/ontology> .
 
 #########################################################
 # Example 1
