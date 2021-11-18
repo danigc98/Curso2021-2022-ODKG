@@ -15,9 +15,9 @@
     rdfs:domain :Accident;
     rdfs:range :District .
 
-:happenedInStreet a owl:ObjectProperty;
+:happenedInAddress a owl:ObjectProperty;
     rdfs:domain :Accident;
-    rdfs:range :Street .
+    rdfs:range :Address .
 
 #################################################################
 #    Data properties
@@ -59,8 +59,12 @@ rel:hasPositiveAlcoholTest a :DataProperty;
     rdfs:domain :Accident;
     rdfs:range xsd:string .
 
+rel:hasStreet a :DataProperty;
+    rdfs:domain :Address;
+    rdfs:range xsd:string .
+
 rel:hasNumber a :DataProperty;
-    rdfs:domain :Street;
+    rdfs:domain :Address;
     rdfs:range xsd:string .
 
 #################################################################
@@ -69,6 +73,6 @@ rel:hasNumber a :DataProperty;
 
 :Accident a owl:Class .
 
-:Street a owl:Class .
+:Address a owl:Class .
 
 :District a owl:Class .
